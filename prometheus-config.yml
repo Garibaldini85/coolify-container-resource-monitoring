@@ -31,8 +31,8 @@ scrape_configs:
       # scheme defaults to 'http'.
 
     static_configs:
-      - targets: ["host.docker.internal:9323"]
+      - targets: ["host.docker.network:9323"]
 
   - job_name: cadvisor
     static_configs:
-     - targets: ['host.docker.internal:8080']
+     - targets: ['host.docker.network:8080']
